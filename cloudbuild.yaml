@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/$IMAGE_NAME:$COMMIT_SHA', '.']
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/notesapp:latest, '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/$IMAGE_NAME:$COMMIT_SHA']
+    args: ['push', 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/notesapp:latest']
 images:
-  - 'us-central1-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE_NAME:$COMMIT_SHA'
+  - 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/notesapp:latest'
