@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/notesapp:latest, '.']
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/notesapp, '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/notesapp:latest']
+    args: ['push', 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/notesapp']
 images:
-  - 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/notesapp:latest'
+  - 'us-central1-docker.pkg.dev/trainocat-1772522171158/notesapp/notesapp'
